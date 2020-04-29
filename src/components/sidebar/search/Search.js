@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 //
-
+import './search-styles.css'
+//
 class Search extends Component{
 
     render(){
         return(
-            <div className="searh-container">
-                <input type="text" placeholder="Search"></input>
-                <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            <div className="search-container">
+                <input className="search-input" type="text" placeholder="Search"/>
             </div>
         );
     }

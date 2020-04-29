@@ -1,0 +1,16 @@
+.head-useragent{
+    margin: 5px;
+    padding: 3px 10px 3px 2px;
+    border: blue 1px solid;
+    display: flex;
+    justify-content: space-between;
+
+}
+.space-head{
+    width: 75%;
+}
+.img-perfil-headuser{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}

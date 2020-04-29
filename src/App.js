@@ -8,7 +8,6 @@ class App extends Component{
 
       return (
     <div className="App">
-      <h1>ChatRealTime</h1>
       <Sidebar/>
     </div>
   );

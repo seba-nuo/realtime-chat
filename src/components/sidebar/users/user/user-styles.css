@@ -1,0 +1,40 @@
+.user-container {
+
+    display: grid;
+    grid-template-columns: 10% 80% 10% ;
+    padding: 2px;
+    border: 1px solid rgb(236, 101, 60);
+}
+.user-container *{
+    font-family: 'Lato', sans-serif;
+}
+.img-perfil-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.img-perfil-user{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    
+
+}
+.name-container{
+    padding-top: 19px;
+    border: 1px slategray solid;
+}
+.name-user{
+    margin: 0;
+}
+.time-container{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+}
+.time-message{
+    font-size: 14px;
+    color: rgb(88, 97, 107);
+}
