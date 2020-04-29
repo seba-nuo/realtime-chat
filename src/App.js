@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
+//
+import Sidebar from "./components/sidebar/Sidebar";
 
-function App() {
-  return (
+class App extends Component{
+  render(){
+
+      return (
     <div className="App">
-      <h1>Chat1</h1>
+      <h1>ChatRealTime</h1>
+      <Sidebar/>
     </div>
   );
+  }
+
 }
 
 export default App;
