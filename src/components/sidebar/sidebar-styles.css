@@ -1,7 +1,7 @@
 .container-sidebar{
     min-height: 710.09px;
     height: 90vh;
-    margin:2.5% 25% 2.5% 25%;
+    /* margin:2.5% 25% 2.5% 25%; */
     display: grid;
     grid-template-rows: 8% 7% 1fr;
     border: 1px black solid;

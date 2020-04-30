@@ -1,0 +1,7 @@
+.chat-container{
+    display: grid;
+    grid-template-rows: 8% 7% 1fr;
+    border: 1px solid black;
+    width: 100%;
+}
+

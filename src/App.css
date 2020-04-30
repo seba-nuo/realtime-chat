@@ -6,4 +6,6 @@ span{
 }
 .App{
   min-height: 710.09px;
+  display: flex;
+  width: 100%;
 }
