@@ -10,6 +10,14 @@ class Users extends Component{
             <div className="users-container">
                 <User/>
                 <User/>
+                <User/>
+                <User/>
+                <User/>
+                <User/>
+                <User/>
+                <User/>
+                <User/>
+                <User/>
             </div>
         );
     }

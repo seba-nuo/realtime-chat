@@ -6,7 +6,9 @@ import "./chat-container-style.css";
 export default function ChatContainer(){
     return(
         <div className="chat-container">
-            <ChatHead/>            
+            <ChatHead/>    
+            <div></div>  
         </div>
+        
     )
 }

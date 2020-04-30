@@ -4,13 +4,21 @@
     border: blue 1px solid;
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
 }
 .space-head{
     width: 75%;
 }
+.img-perfil-head-container{
+    margin: 0;
+    margin-left: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .img-perfil-headuser{
-    width: 30px;
-    height: 30px;
+    width: 37px;
+    height: 37px;
     border-radius: 50%;
+    
 }
