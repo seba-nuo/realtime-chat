@@ -1,0 +1,12 @@
+html,
+body,
+div,
+span{
+  box-sizing: border-box;
+}
+.App{
+  min-height: 710.09px;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
