@@ -1,0 +1,14 @@
+.message-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #eaeaea;
+    
+    /* Cambiar luego que se agregue funcionalidad */
+    align-items: flex-start;
+}
+.message-in{
+    align-items: flex-start;
+}
+.message-out{
+    align-items: flex-end;
+}
