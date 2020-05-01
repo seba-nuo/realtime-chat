@@ -8,4 +8,7 @@
     margin-left: 40px;
     border-radius: 18px;
     flex: 1 1 auto;
+    border: 1px rgb(179, 169, 169) solid;
+    height: auto;
+    width: auto;
 }

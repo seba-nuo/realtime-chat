@@ -1,6 +1,6 @@
 .container-sidebar{
-    width: 260px;
-    min-height: 710.09px;
+    width: 270px;
+    max-height: 100vh;
     height: 100vh;
     display: grid;
     grid-template-rows: 64px 50px 1fr;

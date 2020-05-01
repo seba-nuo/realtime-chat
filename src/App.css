@@ -1,12 +1,23 @@
 html,
 body,
 div,
-span{
+span {
   box-sizing: border-box;
 }
-.App{
-  min-height: 710.09px;
+
+.App {
+  min-height: 100vh;
   display: flex;
   width: 100vw;
   height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #9da6b1;
+  border-radius: 18px;
+  -webkit-border-radius: 8px;
+
 }

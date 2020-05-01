@@ -10,6 +10,26 @@ export default function MessageContainer(props){
             <Message/>
             <Message/>
             <Message/>
+            <Message/>
+            <Message/>
+            <Message/>
+            <Message/>
+            <Message/>
+            <Message/>
+            <Message/>
+            <Message/>
+            <Message/>
+            <Message/>
+            <Message/>
+            <Message/>
+            <Message/>
+            <Message/>
+            <Message/>
+            <Message/>
+            <Message/>
+            <Message/>
+            <Message/>
+            <Message/>
         </div>
     )
 }
