@@ -1,0 +1,5 @@
+.chat-bottom-bar-container{
+    display: flex;
+    align-content: center;
+    width: 100%;
+}

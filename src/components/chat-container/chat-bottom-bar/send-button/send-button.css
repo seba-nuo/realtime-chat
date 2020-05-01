@@ -1,0 +1,7 @@
+.input-button-send{
+    height: 33.4px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid rgb(78, 72, 72);
+    background: white;
+}

@@ -1,6 +1,6 @@
 .chat-container{
     display: grid;
-    grid-template-rows: 64px 1fr;
+    grid-template-rows: 64px 1fr 42px;
     border: 1px solid black;
     width: 100%;
 }

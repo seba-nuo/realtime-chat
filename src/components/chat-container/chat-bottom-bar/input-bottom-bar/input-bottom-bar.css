@@ -1,0 +1,15 @@
+.send-message-container{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.input-text-message{
+    padding: 0 4px;
+    width: 85%;   
+    height: 31px;
+    border: 1px solid rgb(78, 72, 72);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+ 
+}

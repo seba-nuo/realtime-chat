@@ -39,6 +39,7 @@
     border: rgb(132, 0, 255) 1px solid;
 }
 .time-message{
+    cursor: default;
     font-size: 12px;
     color: rgb(88, 97, 107);
     border: 1px solid darkred;

@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 //
 import './sidebar-styles.css'
 //
-import HeadUser from './headUser/HeadUser';
-import Search from './search/Search';
-import Users from "./users/Users";
+import HeadUser from './sidebar-headUser/HeadUser';
+import Search from './sidebar-search/Search';
+import Users from "./sidebar-users/Users";
 
 class Sidebar extends Component {
 
