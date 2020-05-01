@@ -1,0 +1,24 @@
+.message{
+    padding: 6px 7px 8px 9px;
+    max-width: 85%;
+    min-width: 12%;
+    border-radius: 7.5px;
+    margin: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.message-date{
+    font-size: 12px;
+    color: rgb(88, 97, 107);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.message-in{
+    background-color: #fff;
+}
+.message-out{
+    background-color: #fff;
+}
