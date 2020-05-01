@@ -1,6 +1,6 @@
 import React from "react";
 //
-import ChatHead from "./head/ChatHead";
+import ChatHead from "./chat-head/ChatHead";
 import MessageContainer from './messages/MessageContainer';
 import SendMessage from './send-message/SendMessage';
 
