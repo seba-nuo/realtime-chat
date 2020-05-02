@@ -21,3 +21,7 @@ span {
   -webkit-border-radius: 8px;
 
 }
+:root{
+  scrollbar-color: rgb(185, 181, 181) transparent;
+  scrollbar-width: thin;
+}
