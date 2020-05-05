@@ -14,6 +14,5 @@ export default function ChatContainer(){
             <MessageContainer/>
             <SendMessage/>
         </div>
-        
     )
 }

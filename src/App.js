@@ -7,12 +7,12 @@ import ChatContainer from "./components/chat-container/ChatContainer";
 class App extends Component{
   render(){
 
-      return (
-    <div className="App">
-      <Sidebar/>
-      <ChatContainer/>
-    </div>
-  );
+    return (
+      <div className="App">
+        <Sidebar/>
+        <ChatContainer/>
+      </div>
+    );
   }
 
 }

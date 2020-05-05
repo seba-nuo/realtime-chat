@@ -1,13 +1,25 @@
 import React from 'react';
 import './message-list-style.css';
 
-export default function Message(props){
+import { connect } from 'react-redux';
+
+function Message(props){
+    console.log(props.chat)
     return(
-        <div className="message">
-            <span className="message-text">Hola</span>
-            <div className="message-date-container">
-                <span className="message-date">18:48</span>
-            </div>
-        </div>
+        props.chat.items.map(message => { 
+            return (
+                <div className="message">
+                    <span className="message-text">{ message.content }</span>
+                    <div className="message-date-container">
+                        <span className="message-date">{ message.date }</span>
+                    </div>
+                </div>
+            )
+        })
     )
 }
+
+const mapStateToProps = state => {
+    return {chat: state.chat}
+}
+export default connect(mapStateToProps, null)(Message);
