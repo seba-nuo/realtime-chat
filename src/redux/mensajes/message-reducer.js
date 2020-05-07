@@ -7,11 +7,15 @@ const INITIAL_STATE = {
     items: [
         {
             content: "Hi what",
-            date: "4 de mayo 2020"
+            date: "4 de mayo"
         },
         {
             content: "I'm what",
-            date: "4 de mayo 2020"
+            date: "4 de mayo"
+        },
+        {
+            content: "Ok what",
+            date: "4 de mayo"
         }
     ]
 }
@@ -22,7 +26,7 @@ const messageReducer = (previousState = INITIAL_STATE, action) => {
                 ...previousState,
                 currentMessage: {
                     content: action.payload,
-                    date: "4 de mayo 2020"
+                    date: "4 de mayo"
                 }
             }
         default :

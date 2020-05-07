@@ -1,15 +1,16 @@
-.search-container{
-    display: flex;
+.search-container {
+    display        : flex;
     justify-content: center;
-    padding: 10px;
-    border: green 1px solid;
+    padding        : 10px;
+    /* border         : green 1px solid; */
+    background     : #eaeaea;
 }
 
-.search-input{
-    width: 95%;
-    margin: 0;
-    padding-left: 3px;
+.search-input {
+    width        : 95%;
+    margin       : 0;
+    padding-left : 6px;
     border-radius: 5px;
-    border-style: none;
-    border: 1px rgb(65, 62, 62) solid;
+    border-style : none;
+    /* border       : 1px rgb(65, 62, 62) solid; */
 }

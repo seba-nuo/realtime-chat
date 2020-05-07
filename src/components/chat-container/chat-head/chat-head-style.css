@@ -1,6 +1,6 @@
-.chat-head{
-    display: flex;
-    width: 100%;
-    align-items: center;
+.chat-head {
+    display         : flex;
+    width           : 100%;
+    align-items     : center;
     background-color: #80808042;
 }

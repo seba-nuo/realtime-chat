@@ -4,11 +4,12 @@ import './message-list-style.css';
 import { connect } from 'react-redux';
 
 function Message(props){
-    console.log(props.chat)
+    console.log("List ", props.chat) // 👌🏻
+    console.log("Message:",props.chat.items[props.chat.items.length-1])
     return(
-        props.chat.items.map(message => { 
+        props.chat.items.map((message,id) => { 
             return (
-                <div className="message">
+                <div className="message" key={id}>
                     <span className="message-text">{ message.content }</span>
                     <div className="message-date-container">
                         <span className="message-date">{ message.date }</span>

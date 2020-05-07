@@ -1,46 +1,75 @@
 .user-container {
-    display: grid;
-    grid-template-columns: 40px 60% 20%;
-    padding: 2px;
-    border: 1px solid rgb(236, 101, 60);
+    display              : grid;
+    grid-template-columns: 40px 1fr;
+    padding              : 2px;
+    margin               : 3px 0;
+    border               : 1px solid rgb(207, 204, 203);
+    box-sizing           : border-box;
+    height               : 60px;
+    background: #f5f5f5;
 }
-.user-container *{
+
+.user-container * {
     font-family: 'Lato', sans-serif;
 }
-.img-perfil-container{
-    width: 40px;
 
-    display: flex;
+.img-perfil-container {
+    width          : 40px;
+    height         : auto;
+    display        : flex;
     justify-content: center;
-    align-items: center;
-    margin: 0;
-    border: blue 1px solid;
-}
-.img-perfil-user{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    position: relative;
-    
+    align-items    : center;
+    margin         : 0;
+    /* border         : blue 1px solid; */
+    box-sizing     : border-box;
 
 }
-.name-container{
-    padding-left: 4px;
+
+.img-perfil-user {
+    width        : 30px;
+    height       : 30px;
+    border-radius: 50%;
+    position     : relative;
+
+}
+
+.received-container {
+    /* border: rgb(0, 128, 0) 1px solid; */
     padding-top: 5px;
-    border: 1px rgb(87, 95, 104) solid;
 }
-.name-user{
+
+
+
+.name-container {
+    padding-left: 4px;
+    padding-top : 5px;
+    /* border      : 1px rgb(87, 95, 104) solid; */
+}
+
+.name-user {
     margin: 0;
+    font-weight: 600;
 }
-.time-container{
-    display: flex;
-    align-items: flex-end;
+.preview-message {
+    display        : flex;
+    justify-content: space-between;
+}
+.last-message{
+    margin-left:4px;
+    font-size: 14px;
+}
+.time-container {
+    display       : flex;
+    align-items   : flex-end;
     flex-direction: column-reverse;
-    border: rgb(132, 0, 255) 1px solid;
+    /* border        : rgb(132, 0, 255) 1px solid; */
+
 }
-.time-message{
-    cursor: default;
+
+.time-message {
+    cursor   : default;
     font-size: 12px;
-    color: rgb(88, 97, 107);
-    border: 1px solid darkred;
+    color    : rgb(88, 97, 107);
+    /* border   : 1px solid darkred; */
+
 }

@@ -1,25 +1,40 @@
-import React,{ Component } from 'react';
+import React from "react";
 //
-import './user-styles.css';
+import { connect } from "react-redux";
+import "./user-styles.css";
 //
-class User extends Component{
 
-    render(){
+function User(props) {
+  let message = props.chat.items;
 
-        return(
-            <div className="user-container">
-                <figure className="img-perfil-container">
-                    <img className="img-perfil-user" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="imgUser"/>
-                </figure>
-                <div className="name-container">
-                    <p className="name-user">Johnny Depp</p>
-                </div>
-                <div className="time-container">
-                    <span className="time-message">18:48</span>
-                </div>
-            </div>
-        );
-    }
+  return (
+    <div className="user-container">
+      <figure className="img-perfil-container">
+        <img
+          className="img-perfil-user"
+          src="https://bootdey.com/img/Content/avatar/avatar1.png"
+          alt="imgUser"
+        />
+      </figure>
+
+      <div className="received-container">
+        <div className="name-container">
+          <p className="name-user">Johnny Depp</p>
+        </div>
+        <div className="preview-message">
+          <span className="last-message">{message[message.length - 1].content}</span>
+          <div className="time-container">
+            <span className="time-message">
+              {message[message.length - 1].date}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default User;
+const mapStateToProps = (state) => {
+  return { chat: state.chat };
+};
+export default connect(mapStateToProps, null)(User);

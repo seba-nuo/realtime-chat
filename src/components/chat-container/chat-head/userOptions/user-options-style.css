@@ -1,7 +1,7 @@
-.pull-right{
-    margin: 0 15px;
-    padding: 5px 10px;
-    color: rgb(92, 92, 97);
+.pull-right {
+    margin   : 0 15px;
+    padding  : 5px 10px;
+    color    : rgb(92, 92, 97);
     font-size: 20px;
-    cursor: pointer;
+    cursor   : pointer;
 }

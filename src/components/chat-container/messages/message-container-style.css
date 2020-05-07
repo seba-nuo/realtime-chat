@@ -1,14 +1,16 @@
-.message-container{
-    display: flex;
-    flex-direction: column;
+.message-container {
+    display         : flex;
+    flex-direction  : column;
     background-color: #eaeaea;
-    overflow-y: auto;
+    overflow-y      : auto;
     /* Cambiar luego que se agregue funcionalidad */
     align-items: flex-start;
 }
-.message-in{
+
+.message-in {
     align-items: flex-start;
 }
-.message-out{
+
+.message-out {
     align-items: flex-end;
 }

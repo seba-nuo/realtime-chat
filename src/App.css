@@ -6,22 +6,25 @@ span {
 }
 
 .App {
-  min-height: 100vh;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
+  min-height           : 100vh;
+  display              : grid;
+  grid-template-columns: 400px 1fr;
+  width                : 100vw;
+  height               : 100vh;
 }
 
 ::-webkit-scrollbar {
   width: 6px;
 }
+
 ::-webkit-scrollbar-thumb {
-  background: #9da6b1;
-  border-radius: 18px;
+  background           : #9da6b1;
+  border-radius        : 18px;
   -webkit-border-radius: 8px;
 
 }
-:root{
+
+:root {
   scrollbar-color: rgb(185, 181, 181) transparent;
   scrollbar-width: thin;
 }

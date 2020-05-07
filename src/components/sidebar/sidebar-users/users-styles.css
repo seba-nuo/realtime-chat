@@ -1,7 +1,8 @@
-.users-container{
-    display: flex;
+.users-container {
+    display       : flex;
     flex-direction: column;
-    overflow-y: auto;
-    padding: 3px;
-    border: 1px solid purple;
+    flex-wrap     : nowrap;
+    overflow-y    : auto;
+    padding       : 3px;
+    /* border        : 1px solid purple; */
 }
