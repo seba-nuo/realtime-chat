@@ -1,5 +1,6 @@
 const INITIAL_STATE = {
     currentMessage: {
+        id: 0,
         content: "",
         date: "",
     },
@@ -21,14 +22,18 @@ const INITIAL_STATE = {
 }
 const messageReducer = (previousState = INITIAL_STATE, action) => {
     switch (action.type){
-        case 'SET_CURRENT_MESSAGE':
+        case 'ADD_MESSAGE':
+            const { id, content, date } = action.payload;
             return {
                 ...previousState,
-                currentMessage: {
-                    content: action.payload,
-                    date: "4 de mayo"
+                items: [
+                    ...previousState.items,
+                    {
+                        id: id,
+                        content: content,
+                        date: date
+                    }]
                 }
-            }
         default :
             return previousState;
     }

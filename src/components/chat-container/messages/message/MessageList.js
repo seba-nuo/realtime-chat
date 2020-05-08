@@ -7,6 +7,7 @@ function Message(props){
     console.log("List ", props.chat) // 👌🏻
     console.log("Message:",props.chat.items[props.chat.items.length-1])
     return(
+
         props.chat.items.map((message,id) => { 
             return (
                 <div className="message" key={id}>
