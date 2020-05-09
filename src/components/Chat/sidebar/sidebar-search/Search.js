@@ -8,6 +8,9 @@ class Search extends Component{
         return(
             <div className="search-container">
                 <input className="search-input" type="text" placeholder="Search"/>
+                <div className="main-wrapper">
+		            <i className="material-icons">search</i>
+                </div>
             </div>
         );
     }

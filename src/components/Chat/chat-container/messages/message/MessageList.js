@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 
 function Message(props){
     console.log("List ", props.chat) // 👌🏻
-    console.log("Message:",props.chat.items[props.chat.items.length-1])
+    console.log("Message:",props.chat.items[props.chat.items.length-1].content)
     return(
         props.chat.items.map((message,id) => { 
             return (

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 //
-import Sidebar from "./components/sidebar/Sidebar";
-import ChatContainer from "./components/chat-container/ChatContainer";
+import Sidebar from "./components/Chat/sidebar/Sidebar";
+import ChatContainer from "./components/Chat/chat-container/ChatContainer";
 
 class App extends Component{
   render(){

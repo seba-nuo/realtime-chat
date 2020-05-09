@@ -1,0 +1,103 @@
+
+.user-container :hover {
+    background: #e4e4e4;
+}
+
+.user-container:hover .preview-message {
+    color: black;
+}
+
+.user-container * {
+    font-family: 'Lato', sans-serif;
+    cursor     : pointer;
+}
+
+.user-container {
+    display                 : grid;
+    grid-template-columns   : 40px 1fr;
+    padding                 : 3px;
+    margin                  : 2px 0;
+    /* border-bottom        : 1px solid rgb(207, 204, 203); nope*/
+    box-sizing              : content-box;
+    height                  : 72px;
+    background              : #ffffff;
+    width                   : 377px;
+    border-radius           : 10px;
+}
+
+.img-perfil-container {
+    width             : 40px;
+    height            : auto;
+    display           : flex;
+    align-items       : center;
+    justify-content   : center;
+    margin            : 0;
+    /* border         : blue 1px solid; */
+    box-sizing        : border-box;
+
+}
+
+.img-perfil-user {
+    width        : 30px;
+    height       : 30px;
+    border-radius: 50%;
+    position     : relative;
+
+}
+
+.received-container {
+    /* border  : rgb(0, 128, 0) 1px solid; */
+    padding-top: 5px;
+}
+
+
+
+.name-container {
+    padding-left   : 4px;
+    padding-top    : 5px;
+    /* border      : 1px rgb(87, 95, 104) solid; */
+}
+
+.name-user {
+    margin     : 0;
+    font-weight: 600;
+}
+
+.preview-message {
+    width          : 327px;
+    display        : flex;
+    justify-content: space-between;
+
+}
+
+.preview-message {
+    color: #777777;
+}
+
+
+.last-message {
+    min-width    : 0;
+    margin-left  : 4px;
+    margin-right : 4px;
+    font-size    : 14px;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    white-space  : pre;
+}
+
+.time-container {
+    text-align   : center;
+    /* border    : rgb(132, 0, 255) 1px solid; */
+    max-height   : 37px;
+}
+
+.time-container abbr[title] {
+    text-decoration: none;
+}
+
+.time-message {
+    cursor      : default;
+    font-size   : 12px;
+    color       : rgb(88, 97, 107);
+    /* border   : 1px solid darkred; */
+}

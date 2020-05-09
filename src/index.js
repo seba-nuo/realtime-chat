@@ -2,8 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Router from './Router'
 import * as serviceWorker from './serviceWorker';
-
+//
+import 'font-awesome/css/font-awesome.css';
+//
 import {Provider} from 'react-redux';
 import store from './redux/store';
 
@@ -11,7 +14,7 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
-      <App />
+      <Router />
     </React.StrictMode>
   </Provider>,
   rootElement
