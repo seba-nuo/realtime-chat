@@ -1,26 +1,51 @@
 import React from 'react';
 import './message-list-style.css';
 
+import { firestore } from '../../../../../firebase/config-utils';
 import { connect } from 'react-redux';
 
-function Message(props){
-    console.log("List ", props.chat) // 👌🏻
-    console.log("Message:",props.chat.items[props.chat.items.length-1].content)
+function Message(){
+    // console.log("List ", props.chat) // 👌🏻
+    // console.log("Message:",props.chat.items[props.chat.items.length-1].content)
+    var messages = [{
+        content: "hola message",
+        date: "10 de maio",
+        id: 0,
+    }];
+    // firestore.collection("messages")
+    //             .get()
+    //             .then((querySnapshot) => {
+    //                 querySnapshot.forEach((doc) => {                        
+    //                     messages.push(doc.data());   
+	// 		        });
+                    
+	// 	        });   
     return(
+        <div>
+        {messages.forEach(m => {
+            console.log(m.content);
+            return(
+                    <h1>{m.content}</h1>
+                )
+            })
+        }
 
-        props.chat.items.map((message,id) => { 
-            return (
-                <div className="message" key={id}>
-                    <span className="message-text">{ message.content }</span>
-                    <div className="message-date-container">
-                        <span className="message-date">{ message.date }</span>
+            { /*messages.forEach(message => {        
+                return(<h1>{message.content}</h1>)
+                return (
+                    <div className="message" key={message.id}>
+                        <span className="message-text">{ message.content }</span>
+                        <div className="message-date-container">
+                            <span className="message-date">{ message.date }</span>
+                        </div>
                     </div>
-                </div>
-            )
-        })
+                )
+            })*/}
+        </div>
     )
 }
 
+                    
 const mapStateToProps = state => {
     return {chat: state.chat}
 }

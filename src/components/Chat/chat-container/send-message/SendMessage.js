@@ -1,6 +1,7 @@
 import React from "react";
 import './send-message-style.css';
 
+import { firestore } from './../../../../firebase/config-utils';
 import { addMessage } from'../../../../redux/mensajes/message-actions';
 import { connect } from "react-redux";
 
@@ -16,14 +17,26 @@ class SendMessage extends React.Component {
         this.setState({ input });        
     };
     
-    addMessage = () => {
-
-        let fecha = new Date();
-		let options = { day: 'numeric', month: 'long' };
-        fecha = new Intl.DateTimeFormat('es-ES', options).format(fecha);
-
-        this.props.addMessage(this.state.input, fecha);
-        this.setState({ input: "" });
+    addMessage = async () => {
+        if(this.state.input.length > 0){
+            let fecha = new Date();
+            let options = { day: 'numeric', month: 'long' };
+            fecha = new Intl.DateTimeFormat('es-ES', options).format(fecha);
+                
+            await firestore.collection('messages').add({
+                id: 1,
+                content: this.state.input,
+                date: fecha
+            })
+            .then(function(docRef) {
+                console.log("Document written with ID: ", docRef.id);
+            })
+            .catch(function(error) {
+                console.error("Error adding document: ", error);
+            });
+            this.setState({ input: "" });
+            
+        }
     };
 
     render(){
