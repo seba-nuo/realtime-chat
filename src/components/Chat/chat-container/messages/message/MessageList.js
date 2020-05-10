@@ -1,7 +1,7 @@
 import React from 'react';
 import './message-list-style.css';
 
-import { firestore } from '../../../../../firebase/config-utils';
+// import { firestore } from '../../../../../firebase/;config-utils';
 import { connect } from 'react-redux';
 
 function Message(){
@@ -22,13 +22,14 @@ function Message(){
 	// 	        });   
     return(
         <div>
-        {messages.forEach(m => {
-            console.log(m.content);
+        {messages.map((m,i) => {
+            console.log("Message: ",m);
             return(
-                    <h1>{m.content}</h1>
-                )
+                    <h1 key={i}>{m.content}</h1>
+                );
             })
         }
+        {/* <h1 key={messages.id}>{messages[0].content}</h1> */}
 
             { /*messages.forEach(message => {        
                 return(<h1>{message.content}</h1>)
@@ -42,7 +43,7 @@ function Message(){
                 )
             })*/}
         </div>
-    )
+    );
 }
 
                     

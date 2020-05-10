@@ -1,11 +1,11 @@
 .message {
-    padding         : 6px 7px 8px 9px;
-    max-width       : 85%;
-    min-width       : 12%;
-    border-radius   : 7.5px;
-    margin          : 5px 15px;
-    display         : flex;
-    flex-direction  : column;
+    padding: 6px 7px 8px 9px;
+    max-width: 40%;
+    min-width: 12%;
+    border-radius: 7.5px 7.5px 7.5px 0;
+    margin: 5px 15px;
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
 }
 

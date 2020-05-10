@@ -14,9 +14,15 @@ export default class Router extends Component {
       {/* Rutas y Páginas*/}
         <Switch>
             <Route exact path="/"  component={Login}/>
-            <Route  path="/login" component={Login} />
+            <Route exact path="/login" component={Login} />
             <Route exact path="/chat" component={App}  />
-
+            <Route render={() => (
+              <>
+                <h1>Error 404 :o</h1>
+                
+              </>
+            )}
+            />
         </Switch>
       </BrowserRouter>
     );
