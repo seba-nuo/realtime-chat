@@ -1,17 +1,3 @@
-
-.user-container :hover {
-    background: #e4e4e4;
-}
-
-.user-container:hover .preview-message {
-    color: black;
-}
-
-.user-container * {
-    font-family: 'Lato', sans-serif;
-    cursor     : pointer;
-}
-
 .user-container {
     display                 : grid;
     grid-template-columns   : 40px 1fr;
@@ -23,6 +9,17 @@
     background              : #ffffff;
     width                   : 377px;
     border-radius           : 10px;
+}
+.user-container:hover {
+    background: #d9d9d9;
+}
+.user-container:hover .preview-message *{
+    color: black;
+}
+
+.user-container * {
+    font-family: 'Lato', sans-serif;
+    cursor     : pointer;
 }
 
 .img-perfil-container {

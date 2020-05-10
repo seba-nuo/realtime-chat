@@ -28,6 +28,7 @@ function Login(props) {
             name="email"
             type="email"
             placeholder="Correo Electronico"
+            autoComplete="off"
             value={email}
           />
           <input
@@ -35,6 +36,7 @@ function Login(props) {
             name="password"
             type="password"
             placeholder="Contraseña"
+            autoComplete="off"
             value={password}
           />
           <button>Registrarme</button>
@@ -55,6 +57,7 @@ function Login(props) {
             name="email"
             type="email"
             placeholder="Correo Electronico"
+            autoComplete="off"
             value={emailLogin}
           />
           <input
@@ -62,6 +65,7 @@ function Login(props) {
             name="password"
             type="password"
             placeholder="Contraseña"
+            autoComplete="off"
             value={passwordLogin}
           />
           <Link to="/chat">Click Here! Iniciar Sesion</Link>
