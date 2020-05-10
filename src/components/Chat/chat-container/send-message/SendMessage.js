@@ -1,7 +1,7 @@
 import React from "react";
 import './send-message-style.css';
 
-import { addMessage } from'../../../redux/mensajes/message-actions';
+import { addMessage } from'../../../../redux/mensajes/message-actions';
 import { connect } from "react-redux";
 
 class SendMessage extends React.Component {

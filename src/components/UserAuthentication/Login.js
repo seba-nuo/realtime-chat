@@ -1,110 +1,93 @@
-import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
-//
-import $ from 'jquery';
-//
-import "./login-styles.css";
-//
-// import './assets/undraw_authentication_fsn5.svg';
-// import './assets/undraw_fingerprint_swrc.svg';
-// import './assets/undraw_personal_data_29co.svg';
-// import './assets/Wave.png'
-export default class Login extends Component{
+import React from "react";
+import {Link } from "react-router-dom";
 
-          
-    // $(document).ready(function () {
-    //   $(".owl-carousel").owlCarousel({
-    //     loop: true,
-    //     autoplay: true,
-    //     autoplayTimeout: 2000,
-    //     autoplayHoverPause: true,
-    //     items: 1
-    //   });
-    // });
+import { connect } from "react-redux";
+import {
+  setCurrentRegister,
+  setCurrentLogin,
+  register
+} from "../../redux/login/user-actions";
 
+function Login(props) {
+  let { email, password } = props.user.currentRegister;
+  let { emailLogin, passwordLogin } = props.user.currentLogin;
 
-
-  render() {
-    return (
-      <div className="container">
-        <div className="panel">
-          <div className="row">
-            <div className="col liquid">
-              <h4>
-                {/* <i className="fas fa-drafting-compass"></i> */}
-                Chat-RealTime.
-              </h4>
-              {/* Owl-Carousel  */}
-
-              <div className="owl-carousel owl-theme">
-                <img
-                  src="./assets/undraw_authentication_fsn5.svg"
-                  alt=""
-                  className="login_img"
-                />
-                <img
-                  src="./assets/undraw_personal_data_29co.svg"
-                  alt=""
-                  className="login_img"
-                />
-                <img
-                  src="./assets/undraw_fingerprint_swrc.svg"
-                  alt=""
-                  className="login_img"
-                />
-              </div>
-
-              {/* /Owl-Carousel  */}
-            </div>
-            <div className="col login">
-              <button type="button" className="btn btn-signup">
-                Sign Up
-              </button>
-              <form>
-                <div className="titles">
-                  <h6>We keep everything</h6>
-                  <h3>Ready to Login</h3>
-                </div>
-                <div className="form-group">
-                  <input
-                    type="text"
-                    placeholder="Full Name"
-                    className="form-input"
-                  />
-                  <div className="input-icon">
-                    <i className="fas fa-user"></i>
-                  </div>
-                </div>
-                <div className="form-group">
-                  <input
-                    type="text"
-                    placeholder="Email"
-                    className="form-input"
-                  />
-                  <div className="input-icon">
-                    <i className="fas fa-user"></i>
-                  </div>
-                </div>
-                <div className="form-group">
-                  <input
-                    type="password"
-                    placeholder="Password"
-                    className="form-input"
-                  />
-                  <div className="input-icon">
-                    <i className="fas fa-user-lock"></i>
-                  </div>
-                </div>
-                <NavLink to="/chat" className="btn btn-login">Login</NavLink>
-                {/* <button type="submit" className="btn btn-login">
-                  Login
-                </button> */}
-                
-              </form>
-            </div>
-          </div>
-        </div>
+  return (
+    <div className="App">
+      <div className="register">
+        <h2>Registro</h2>
+        <form
+        className="register-form"
+          onSubmit={e => {
+            e.preventDefault();
+            props.register();
+          }}
+        >
+          <input
+            onChange={e => props.setCurrentRegister(e)}
+            name="email"
+            type="email"
+            placeholder="Correo Electronico"
+            value={email}
+          />
+          <input
+            onChange={e => props.setCurrentRegister(e)}
+            name="password"
+            type="password"
+            placeholder="Contraseña"
+            value={password}
+          />
+          <button>Registrarme</button>
+        </form>
+        <br />
+        {`CurrentRegister: ${JSON.stringify(props.user.currentRegister)}`}
       </div>
-    );
-  }
+      <div className="login">
+        <h2>Iniciar Sesión</h2>
+        <form
+        className="login-form"
+          onSubmit={e => {
+            e.preventDefault();
+          }}
+        >
+          <input
+            onChange={e => props.setCurrentLogin(e)}
+            name="email"
+            type="email"
+            placeholder="Correo Electronico"
+            value={emailLogin}
+          />
+          <input
+            onChange={e => props.setCurrentLogin(e)}
+            name="password"
+            type="password"
+            placeholder="Contraseña"
+            value={passwordLogin}
+          />
+          <Link to="/chat">Click Here! Iniciar Sesion</Link>
+        </form>
+        <br />
+        {`currentLogin: ${JSON.stringify(props.user.currentLogin)}`}
+      </div>
+    </div>
+  );
 }
+
+const mapStateToProps = state => {
+  return {
+    user: state.user
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    setCurrentRegister: event => dispatch(setCurrentRegister(event)),
+    setCurrentLogin: event => dispatch(setCurrentLogin(event)),
+    register: () => dispatch(register())
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Login);
