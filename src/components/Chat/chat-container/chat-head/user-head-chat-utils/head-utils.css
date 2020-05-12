@@ -1,0 +1,5 @@
+.head-chat-utils-container {
+    display: flex;
+    width: 177px;
+    justify-content: space-between;
+}

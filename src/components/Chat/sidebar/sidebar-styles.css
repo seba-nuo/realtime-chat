@@ -1,10 +1,9 @@
 .container-sidebar {
-    width             : 400px;
+    width             : auto;
     max-height        : 100vh;
     height            : 100vh;
     display           : grid;
     grid-template-rows: 64px 50px 1fr;
     /* border            : 1px black solid; */
     border-right: rgb(216, 216, 216) 1px solid;
-
 }

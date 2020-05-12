@@ -1,6 +1,10 @@
 .chat-head {
-    display         : flex;
-    width           : 100%;
-    align-items     : center;
-    background-color: #80808042;
+    display: flex;
+    width: 100%;
+    padding-right: 15px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ededed;
+    overflow: hidden;
+    border-bottom: 1px solid black;
 }

@@ -1,0 +1,10 @@
+.i_c_message {
+    width       : 55px;
+    height      : 43px;
+    margin-right: 30px;
+}
+
+.i_message {
+    width : 28px;
+    z-index: 10;
+}

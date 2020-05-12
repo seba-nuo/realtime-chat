@@ -16,7 +16,7 @@ const INITIAL_STATE = {
         },
         {
             content: "Ok what, Ok :)  Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
-            date: "9 de septiembre"
+            date: "10/11/20"
         }
     ]
 }

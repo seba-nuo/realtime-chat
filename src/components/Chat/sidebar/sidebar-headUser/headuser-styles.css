@@ -1,10 +1,9 @@
 .head-useragent {
-    padding        : 0px 5px 3px 5px;
-    /* border         : blue 1px solid; */
-    display        : flex;
-    justify-content: space-between;
-    align-items    : center;
-    background     : #80808042;
+    /* border-bottom         : #e5e5e6 1px solid; */
+    display           : flex;
+    justify-content   : space-between;
+    align-items       : center;
+    background        : #ededed;
 }
 
 .space-head {
@@ -12,16 +11,18 @@
 }
 
 .img-perfil-head-container {
-    margin         : 0;
-    margin-left    : 3px;
+    margin: 0; /* No delete */
+    margin-left    : 10px;
     display        : flex;
     justify-content: center;
     align-items    : center;
 }
 
 .img-perfil-headuser {
-    width        : 37px;
-    height       : 37px;
+    width        : 40px;
+    height       : 40px;
     border-radius: 50%;
 
 }
+
+

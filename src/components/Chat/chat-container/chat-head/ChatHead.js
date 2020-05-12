@@ -4,7 +4,7 @@ import './chat-head-style.css';
 //
 import UserPhoto from "./userPhoto/UserPhoto";
 import UserName from "./userName/UserName";
-import UserOptions from "./userOptions/UserOptions";
+import HeadUtils from "./user-head-chat-utils/HeadUtils";
 
 
 export default function ChatHead(){
@@ -12,7 +12,7 @@ export default function ChatHead(){
         <div className="chat-head">
             <UserPhoto/>
             <UserName/>
-            <UserOptions/>
+            <HeadUtils/>
         </div>
     )
 }

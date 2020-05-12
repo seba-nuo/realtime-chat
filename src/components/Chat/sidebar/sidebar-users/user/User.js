@@ -8,11 +8,13 @@ function User(props) {
   let message = props.chat.items;
 
   return (
+    <div className="sidebar-user-message">
+      <span className="estado-user"></span>
       <div className="user-container">
         <figure className="img-perfil-container">
           <img
             className="img-perfil-user"
-            src="https://bootdey.com/img/Content/avatar/avatar1.png"
+            src="https://bootdey.com/img/Content/avatar/avatar6.png"
             alt="imgUser"
           />
         </figure>
@@ -25,6 +27,7 @@ function User(props) {
             <span className="last-message">
               <span>{message[message.length - 1].content}</span>
             </span>
+            <span className="message-count">1</span>
             <div className="time-container">
               <span className="time-message">
                 <abbr title={message[message.length - 1].date}>
@@ -35,7 +38,9 @@ function User(props) {
             </div>
           </div>
         </div>
+        <span className="message-count-media">1</span>
       </div>
+    </div>
   );
 }
 

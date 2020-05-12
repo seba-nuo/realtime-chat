@@ -1,7 +1,7 @@
 .message-container {
     display         : flex;
     flex-direction  : column;
-    background-color: #eaeaea;
+    background-color: #dfffe7;
     overflow-y      : auto;
     /* Cambiar luego que se agregue funcionalidad */
     align-items: flex-start;

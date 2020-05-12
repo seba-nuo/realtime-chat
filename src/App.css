@@ -5,12 +5,30 @@ span {
   box-sizing: border-box;
 }
 
-.App {
+.chatApp {
   min-height           : 100vh;
   display              : grid;
   grid-template-columns: 400px 1fr;
   width                : 100vw;
   height               : 100vh;
+  transition: linear 2s grid-template-colums;
+}
+
+
+.noselectable {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select  : none;
+  /* Safari */
+  -khtml-user-select   : none;
+  /* Konqueror HTML */
+  -moz-user-select     : none;
+  /* Old versions of Firefox */
+  -ms-user-select      : none;
+  /* Internet Explorer/Edge */
+  user-select          : none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 ::-webkit-scrollbar {
@@ -27,4 +45,112 @@ span {
 :root {
   scrollbar-color: rgb(185, 181, 181) transparent;
   scrollbar-width: thin;
+}
+
+/* MediaQuery */
+@media screen and (min-width:461px) and (max-width: 973px) {
+  .chatApp {
+    grid-template-columns: 103px 1fr;
+  }
+
+  /* .i_s_search-container{
+    left: none;
+  } */
+
+  .user-container {
+    grid-template-columns: 40px 45px !important;
+    width                : 95px !important;
+    padding              : 0;
+    margin               : auto !important;
+    border-radius        : 0 !important;
+  }
+
+  .space-head,
+  .i_message,
+  .i_c_message,
+  .search-input,
+  .name-container,
+  .last-message {
+    min-width : 0 !important;
+    height    : 0 !important;
+    min-height: 0 !important;
+    width     : 0 !important;
+    display   : none !important;
+  }
+
+  .time-message {
+    font-size: 11px;
+
+  }
+
+  .message-count {
+    margin-top: 5px;
+  }
+
+  /* .received-container, */
+  .preview-message {
+    width          : auto !important;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    flex-direction : column-reverse;
+  }
+
+  .head-chat-utils-container {
+    width: 135px!important;
+  }
+}
+
+/* Mobile? */
+@media screen and (max-width:460px) {
+  .App {
+    width   : 100vw;
+    height  : 100vh;
+    overflow: hidden;
+  }
+
+  .chatApp {
+    grid-template-columns: 1fr 1fr;
+    width                : 200vw;
+  }
+
+  .user-container {
+    margin: auto !important;
+  }
+
+  .chat-container {
+    display: none !important;
+  }
+}
+
+
+@media screen and (min-width:372px) and (max-width:459px) {
+
+  .img-perfil-head-container {
+    margin-left: 15px!important;
+  }
+
+  .user-container {
+    padding-left: 16px!important;
+  }
+
+  .preview-message {
+    width: calc(100% - 69%)!important;
+
+  }
+  .last-message{
+    width: 70%!important;
+  }
+  
+}
+
+@media screen and (max-width:371px) {
+  .user-container {
+    padding-left: 16px!important;
+  }
+  .preview-message {
+    width: calc(100% - 71%)!important;
+
+  }
+  
 }
