@@ -17,13 +17,13 @@ class SendMessage extends React.Component {
         this.setState({ input });        
     };
     
-    addMessage = async () => {
+    addMessage = () => {
         if(this.state.input.length > 0){
             let fecha = new Date();
             let options = { day: 'numeric', month: 'long' };
             fecha = new Intl.DateTimeFormat('es-ES', options).format(fecha);
                 
-            await firestore.collection('messages').add({
+            firestore.collection('messages').add({
                 id: 1,
                 content: this.state.input,
                 date: fecha
