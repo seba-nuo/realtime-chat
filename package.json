@@ -1,6 +1,6 @@
 {
   "name": "chat-realtime",
-  "homepage": "https://wes137.github.io/",
+  "homepage": "https://wes137.github.io/realtime-chat/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
