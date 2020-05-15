@@ -23,13 +23,11 @@ class Message extends React.Component{
                     if(arrayMessages.length >0){
                         this.setState({messages: arrayMessages})
                     }
-
             });
         }
     render(){
         return(
-            <div>
-            {this.state.messages.map((message, i) => {return(
+            this.state.messages.map((message, i) => {return(
                 <div className="message" key={i}>
                     <span className="message-text">{ message.content }</span>
                     <div className="message-date-container">
@@ -37,9 +35,7 @@ class Message extends React.Component{
                     </div>
                 </div>
             )})
-        }
-            </div>
-            )
+        )
     }
 }
                     

@@ -1,10 +1,10 @@
 .message-container {
     display         : flex;
     flex-direction  : column;
-    background-color: #dcf8c6;
+    background-color: #fff;
     overflow-y      : auto;
     /* Cambiar luego que se agregue funcionalidad */
-    align-items: flex-start;
+    align-items: flex-end;
 }
 
 .message-in {
@@ -12,5 +12,6 @@
 }
 
 .message-out {
+    background-color: #f0f0f0;
     align-items: flex-end;
 }

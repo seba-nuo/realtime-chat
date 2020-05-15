@@ -1,12 +1,9 @@
 .message {
     padding: 6px 7px 8px 9px;
-    max-width: 80%;
-    min-width: 30%;
+    width: fit-content;
     border-radius: 7.5px 7.5px 7.5px 0;
     margin: 5px 15px;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
+    background-color: #dcf8c6;
 }
 
 .message-date {
